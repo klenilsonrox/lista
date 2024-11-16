@@ -78,7 +78,7 @@ export default function Home() {
       .slice(0, 5)}`;
 
     const message = `Lista de hoje (${formattedDate}):\n\n${selectedItems.join('\n')}`;
-    const whatsappLink = `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
+    const whatsappLink = `https://wa.me/+55${number}?text=${encodeURIComponent(message)}`;
     window.open(whatsappLink, '_blank');
     setShowModal(false); // Fecha o modal após enviar
   };
